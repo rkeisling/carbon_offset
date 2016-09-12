@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- DISCLAIMER: THIS WAS MADE BY A STUDENT. -->
+<html>
+
+<head>
+  <title>RAddeyCole Music</title>
+  <link rel='icon' href="" />
+  <link rel='stylesheet' href='css/bootstrap.css' />
+  <link href="music-buttons.css" rel="stylesheet" />
+  <title>RAddeyCole Music</title>
+</head>
+
+<body>
+  <h1><font color=#ee0af2>R</font><font color=#f7f67c>Addey</font><font color=#76ecc5>Cole</font> <font color=#fb008f>Music</font></h1>
+    <h2>Click to enjoy!</h2>
+    <section id="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12"></div>
+            </div>
+
+            <div class="row col-lg-12 col-md-12 col-sm-12">
+                <button class="btn-primary button button1" onclick='make_sound("journey");'>
+                  <p>Journey -</p>
+                  <p>"Don't Stop Believin'"</p></button>
+                <button class="btn-primary button button2" onclick='make_sound("march");'>
+                  <p>Mozart -</p>
+                  <p>"Turkish March"</p></button>
+                <button class="btn-primary button button3" onclick='make_sound("usher");'>
+                  <p>Usher -</p>
+                  <p>"Yeah!"</p></button>
+                <button class="btn-primary button button4" onclick='make_sound("dio");'>
+                  <p>Dio -</p>
+                  <p>"Holy Diver"</p></button>
+            </div>
+
+            <br />
+            <div class="row col-lg-12 col-md-12 col-sm-12">
+                <button class="btn-primary button button5" onclick='make_sound("twitty");'>
+                  <p>Conway Twitty -</p>
+                  <p>"Hello Darlin'"</p></button>
+                <button class="btn-primary button button6" onclick='make_sound("baker");'>
+                  <p>Chet Baker -</p>
+                  <p>"My Funny Valentine"</p></button>
+                <button class="btn-primary button button7" onclick='make_sound("fetty");'>
+                  <p>Fetty Wap -</p>
+                  <p>"679"</p></button>
+                <button class="btn-primary button button8" onclick='make_sound("daft");'>
+                  <p>Daft Punk -</p>
+                  <p>"Get Lucky"</p></button>
+            </div>
+        </div>
+    </section>
+    <audio id='journey' src='dont_stop.mp3'></audio>
+    <audio id='march' src='march.mp3'></audio>
+    <audio id='fetty' src='fetty.mp3'></audio>
+    <audio id='daft' src='get_lucky.mp3'></audio>
+    <audio id='dio' src='holy_diver.mp3'></audio>
+    <audio id='usher' src='yeah.mp3'></audio>
+    <audio id='baker' src='valentine.mp3'></audio>
+    <audio id='twitty' src='hello_darlin.mp3'></audio>
+    <script src='adjustments.js'></script>
+</body>
+
+</html>
