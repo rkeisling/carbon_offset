@@ -4,7 +4,7 @@ var cart = {
   available: [29, 13, 36],
   quantity: [0, 0, 0],
   total: 0,
-  addToCart: function(index, avail, quan, total_price) {
+  addToCart: function(index, avail, quan, total_price, id) {
     if (this.available[index] > 0) {
       this.available[index]--;
       this.quantity[index]++;
@@ -12,11 +12,13 @@ var cart = {
     };
     document.getElementById(avail).innerText = 'Available: ' + this.available[index];
     document.getElementById(quan).innerText = 'Quantity: ' + this.quantity[index];
+    document.getElementById(id).innerText = this.quantity[index];
     document.getElementById('total_1').innerText = 'Total: $' + this.total;
     document.getElementById('total_2').innerText = 'Total: $' + this.total;
     document.getElementById('total_3').innerText = 'Total: $' + this.total;
+    document.getElementById('total_4').innerText = 'Total: $' + this.total;
   },
-  removeFromCart: function(index, avail, quan, total_price) {
+  removeFromCart: function(index, avail, quan, total_price, id) {
     if (this.quantity[index] > 0) {
       this.available[index]++;
       this.quantity[index]--;
@@ -24,8 +26,10 @@ var cart = {
     };
     document.getElementById(avail).innerText = 'Available: ' + this.available[index];
     document.getElementById(quan).innerText = 'Quantity: ' + this.quantity[index];
+    document.getElementById(id).innerText = this.quantity[index];
     document.getElementById('total_1').innerText = 'Total: $' + this.total;
     document.getElementById('total_2').innerText = 'Total: $' + this.total;
     document.getElementById('total_3').innerText = 'Total: $' + this.total;
+    document.getElementById('total_4').innerText = 'Total: $' + this.total;
   }
 }

@@ -127,8 +127,8 @@
                         </p>
                     </div>
                     <div>
-                        <button onclick="cart.addToCart(0, 'avail_1', 'quan_1', 'total_1')">Add To Cart</button>
-                        <button onclick="cart.removeFromCart(0, 'avail_1', 'quan_1', 'total_1')">Remove From Cart</button>
+                        <button onclick="cart.addToCart(0, 'avail_1', 'quan_1', 'total_1', 'city')">Add To Cart</button>
+                        <button onclick="cart.removeFromCart(0, 'avail_1', 'quan_1', 'total_1', 'city')">Remove From Cart</button>
                     </div>
                 </div>
             </div>
@@ -157,8 +157,8 @@
                         </p>
                     </div>
                     <div>
-                        <button onclick="cart.addToCart(1, 'avail_2', 'quan_2', 'total_2')">Add To Cart</button>
-                        <button onclick="cart.removeFromCart(1, 'avail_2', 'quan_2', 'total_2')">Remove From Cart</button>
+                        <button onclick="cart.addToCart(1, 'avail_2', 'quan_2', 'total_2', 'trees')">Add To Cart</button>
+                        <button onclick="cart.removeFromCart(1, 'avail_2', 'quan_2', 'total_2', 'trees')">Remove From Cart</button>
                     </div>
                 </div>
             </div>
@@ -188,8 +188,8 @@
                         </p>
                     </div>
                     <div>
-                        <button onclick="cart.addToCart(2, 'avail_3', 'quan_3', 'total_3')">Add To Cart</button>
-                        <button onclick="cart.removeFromCart(2, 'avail_3', 'quan_3', 'total_3')">Remove From Cart</button>
+                        <button onclick="cart.addToCart(2, 'avail_3', 'quan_3', 'total_3', 'wind')">Add To Cart</button>
+                        <button onclick="cart.removeFromCart(2, 'avail_3', 'quan_3', 'total_3', 'wind')">Remove From Cart</button>
                     </div>
                 </div>
             </div>
@@ -245,7 +245,18 @@ Morbi ac neque libero. Pellentesque magna purus, mattis vitae eros eget, rhoncus
 
             </div>
             <div class='rightarea'>
-              Placeholder area
+              <p>
+                Donations to Make City Green: <p id='city'>0</p>
+              </p>
+              <p>
+                Donations to Plant Trees: <p id='trees'>0</p>
+              </p>
+              <p>
+                Donations for Wind Turbines: <p id='wind'>0</p>
+              </p>
+              <p id='total_4'>
+                Overall Total: 0
+              </p>
             </div>
 
         </div>
