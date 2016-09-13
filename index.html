@@ -1,13 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <title>Shop</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/shop-homepage.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Treedom</title>
+    <link rel='shortcut icon' href='data:image/jpeg;base64,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' />
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="bootstrap/css/modern-business.css" rel="stylesheet">
+    <link href="carb.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Treedom</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a type="button" class="btn openbtn btn-lg" data-toggle="modal" data-target="#about">About</a>
+                    </li>
+                    <li>
+                        <a type="button" class="btn openbtn btn-lg" data-toggle="modal" data-target="#contact">Contact</a>
+                    </li>
+                    <li class=page-scroll"">
+                        <a href="#cart" type="button" class="btn openbtn btn-lg">Shopping Cart</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/img1.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/img_2.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/img3.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Choose and Donate
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i>Making the City Green</h4>
+                    </div>
+                    <div>
+                        <img class="img-responsive img-portfolio" src="img/item1.png">
+                    </div>
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pellentesque ex. Etiam facilisis urna volutpat metus faucibus porta. Suspendisse lobortis sed dolor ultricies sodales.
+                      </p>
+                        <p id='avail_1'>
+                            Available: 29
+                        </p>
+                        <p id='quan_1'>
+                            Quantity: 0
+                        </p>
+                        <p>
+                            Price: $50
+                        </p>
+                        <p id="total_1">
+                            Total: $0
+                        </p>
+                    </div>
+                    <div>
+                        <button onclick="cart.addToCart(0, 'avail_1', 'quan_1', 'total_1', 'city')">Add To Cart</button>
+                        <button onclick="cart.removeFromCart(0, 'avail_1', 'quan_1', 'total_1', 'city')">Remove From Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i>Reforestation</h4>
+                    </div>
+                    <div>
+                        <img class="img-responsive img-portfolio" src="img/item2.jpg">
+                    </div>
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pellentesque ex. Etiam facilisis urna volutpat metus faucibus porta. Suspendisse lobortis sed dolor ultricies sodales.
+                      </p>
+                        <p id='avail_2'>
+                            Available: 13
+                        </p>
+                        <p id='quan_2'>
+                            Quantity: 0
+                        </p>
+                        <p>
+                            Price: $35
+                        </p>
+                        <p id="total_2">
+                            Total: $0
+                        </p>
+                    </div>
+                    <div>
+                        <button onclick="cart.addToCart(1, 'avail_2', 'quan_2', 'total_2', 'trees')">Add To Cart</button>
+                        <button onclick="cart.removeFromCart(1, 'avail_2', 'quan_2', 'total_2', 'trees')">Remove From Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i>Creating Wind Turbines</h4>
+                    </div>
+                    <div>
+                        <img class="img-responsive img-portfolio" src="img/item3.jpg">
+                    </div>
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pellentesque ex. Etiam facilisis urna volutpat metus faucibus porta. Suspendisse lobortis sed dolor ultricies sodales.
+                      </p>
+                        <p id='avail_3'>
+                            Available: 36
+                        </p>
+                        <p id='quan_3'>
+                            Quantity: 0
+                        </p>
+                        <p>
+                            Price: $95
+                        </p>
+                        <p id="total_3">
+                            Total: $0
+                        </p>
+                    </div>
+                    <div>
+                        <button onclick="cart.addToCart(2, 'avail_3', 'quan_3', 'total_3', 'wind')">Add To Cart</button>
+                        <button onclick="cart.removeFromCart(2, 'avail_3', 'quan_3', 'total_3', 'wind')">Remove From Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Previous Project</h2>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="row">
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                <a href="http://caseytrees.org/programs/planting/ctp/">
+                    <img class="img-responsive img-portfolio img-hover" src="img/image4.jpg" alt="">
+                    <div class="caption">
+                        <h5 class- "pull-right"></h5>
+                        <p>
+                          Community Tree Planting Project.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class='col-lg-8 col-md-8 col-sm-8 rightarea'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur erat leo, nec tristique justo dignissim et. Nulla commodo urna eros, vitae imperdiet dolor mattis id. In ultricies mi arcu, lacinia commodo mauris egestas vitae. Nulla facilisi. Nullam ultrices leo ligula, vel egestas ligula tempor a. Sed bibendum metus mi, at aliquam lorem pulvinar nec. Morbi malesuada vel velit suscipit fringilla. Nunc porttitor lobortis odio, et ultricies nulla scelerisque et. Nam quis vulputate mi. Vivamus interdum eros ac ex faucibus, ut malesuada justo suscipit. Sed id vehicula nunc, a placerat justo. Sed gravida convallis massa non porttitor. Nullam pulvinar viverra ex, a tempus dolor pellentesque quis.
+
+Morbi ac neque libero. Pellentesque magna purus, mattis vitae eros eget, rhoncus consectetur lacus. Nullam imperdiet elementum sapien a sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam hendrerit dui at neque elementum, quis ultricies massa rutrum. Pellentesque non ligula vel turpis commodo blandit. Sed sagittis sit amet justo in convallis. Integer ut sagittis arcu. Proin eget commodo nunc. Mauris nec rutrum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus dolor.
+            </div>
+
+        </div>
+      </div>
+    </div>
+        <!-- /.row -->
+
+      <section id="cart">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Shopping Cart</h2>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+
+            <img class="img-responsive img-portfolio img-hover" src="img/green_shop_cart.gif" alt="">
+
+            <p>
+              Shopping Cart
+            </p>
+
+            </div>
+            <div class='rightarea'>
+              <p>
+                Donations to Make City Green: <p id='city'>0</p>
+              </p>
+              <p>
+                Donations to Plant Trees: <p id='trees'>0</p>
+              </p>
+              <p>
+                Donations for Wind Turbines: <p id='wind'>0</p>
+              </p>
+              <p id='total_4'>
+                Overall Total: 0
+              </p>
+            </div>
+        </div>
+      </section>
+
+        <hr>
+        <div id="about" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">About Us</h4>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur erat leo, nec tristique justo dignissim et. Nulla commodo urna eros, vitae imperdiet dolor mattis id. In ultricies mi arcu, lacinia commodo mauris egestas vitae. Nulla facilisi. Nullam ultrices leo ligula, vel egestas ligula tempor a. Sed bibendum metus mi, at aliquam lorem pulvinar nec. Morbi malesuada vel velit suscipit fringilla. Nunc porttitor lobortis odio, et ultricies nulla scelerisque et. Nam quis vulputate mi. Vivamus interdum eros ac ex faucibus, ut malesuada justo suscipit. Sed id vehicula nunc, a placerat justo. Sed gravida convallis massa non porttitor. Nullam pulvinar viverra ex, a tempus dolor pellentesque quis.
+
+            Morbi ac neque libero. Pellentesque magna purus, mattis vitae eros eget, rhoncus consectetur lacus. Nullam imperdiet elementum sapien a sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam hendrerit dui at neque elementum, quis ultricies massa rutrum. Pellentesque non ligula vel turpis commodo blandit. Sed sagittis sit amet justo in convallis. Integer ut sagittis arcu. Proin eget commodo nunc. Mauris nec rutrum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus dolor.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact Us</h4>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur erat leo, nec tristique justo dignissim et. Nulla commodo urna eros, vitae imperdiet dolor mattis id. In ultricies mi arcu, lacinia commodo mauris egestas vitae. Nulla facilisi. Nullam ultrices leo ligula, vel egestas ligula tempor a. Sed bibendum metus mi, at aliquam lorem pulvinar nec. Morbi malesuada vel velit suscipit fringilla. Nunc porttitor lobortis odio, et ultricies nulla scelerisque et. Nam quis vulputate mi. Vivamus interdum eros ac ex faucibus, ut malesuada justo suscipit. Sed id vehicula nunc, a placerat justo. Sed gravida convallis massa non porttitor. Nullam pulvinar viverra ex, a tempus dolor pellentesque quis.
+
+            Morbi ac neque libero. Pellentesque magna purus, mattis vitae eros eget, rhoncus consectetur lacus. Nullam imperdiet elementum sapien a sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam hendrerit dui at neque elementum, quis ultricies massa rutrum. Pellentesque non ligula vel turpis commodo blandit. Sed sagittis sit amet justo in convallis. Integer ut sagittis arcu. Proin eget commodo nunc. Mauris nec rutrum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id dapibus dolor.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Our Website 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
+    <script src='carb.js'></script>
 </body>
+
 </html>
