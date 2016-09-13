@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 
 
@@ -91,16 +93,8 @@
             <span class="icon-next"></span>
         </a>
     </header>
-
-
-
-
-
-
-
     <!-- Page Content -->
     <div class="container">
-
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -118,11 +112,22 @@
                             <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450">
                         </a>
                     </div>
-                    <div id='first'>
-
+                    <div>
+                        <p id='avail_1'>
+                            Available: 29
+                        </p>
+                        <p id='quan_1'>
+                            Quantity: 0
+                        </p>
+                        <p>
+                            Price: $50
+                        </p>
+                        <p id="total_1">
+                            Total: $0
+                        </p>
                     </div>
                     <div>
-                        <button onclick="cart.addToCart(0, first)">Add To Cart</button>
+                        <button onclick="cart.addToCart(0, 'avail_1', 'quan_1', 'total_1')">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -136,11 +141,22 @@
                             <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450">
                         </a>
                     </div>
-                    <div id='second'>
-
+                    <div>
+                        <p id='avail_2'>
+                            Available: 13
+                        </p>
+                        <p id='quan_2'>
+                            Quantity: 0
+                        </p>
+                        <p>
+                            Price: $35
+                        </p>
+                        <p id="total_2">
+                            Total: $0
+                        </p>
                     </div>
                     <div>
-                        <button onclick="cart.addToCart(1, second)">Add To Cart</button>
+                        <button onclick="cart.addToCart(1, 'avail_2', 'quan_2', 'total_2')">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -155,11 +171,22 @@
                             <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450">
                         </a>
                     </div>
-                    <div id='third'>
-
+                    <div>
+                        <p id='avail_3'>
+                            Available: 36
+                        </p>
+                        <p id='quan_3'>
+                            Quantity: 0
+                        </p>
+                        <p>
+                            Price: 95
+                        </p>
+                        <p id="total_3">
+                            Total: $0
+                        </p>
                     </div>
                     <div>
-                        <button onclick="cart.addToCart(2, third)">Add To Cart</button>
+                        <button onclick="cart.addToCart(2, 'avail_3', 'quan_3', 'total_3')">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -180,9 +207,9 @@
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-portfolio img-hover" src="img/image4.jpg" alt="">
                     <div class="caption">
-                      <h5 class-"pull-right"></h5>
+                        <h5 class- "pull-right"></h5>
                         <p>
-                          We did a this
+                            We did a this
                         </p>
                     </div>
                 </a>
@@ -200,9 +227,9 @@
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-portfolio img-hover" src="img/green_shop_cart.gif" alt="">
                     <div class="caption">
-                      <h5 class-"pull-right"></h5>
+                        <h5 class- "pull-right"></h5>
                         <p>
-                          buy a stuff
+                            buy a stuff
                         </p>
                     </div>
                 </a>
@@ -232,9 +259,11 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
     </script>
+    <script src='carb.js'></script>
 </body>
+
 </html>
