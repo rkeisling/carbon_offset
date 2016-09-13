@@ -4,12 +4,14 @@ var cart = {
   available: [29, 13, 36],
   quantity: [0, 0, 0],
   total: 0,
-  addToCart: function(index, place) {
-    available[index]--;
-    quantity[index]++;
-    total = total + price[index];
-    document.getElementById(place)('Available: ' + available)
-    document.getElementById(place)('Quantity: ' + quantity)
-    document.getElementById(place)('Total: ' + total)
+  addToCart: function(index, avail, quan, total_price) {
+    this.available[index]--;
+    this.quantity[index]++;
+    this.total = this.total + this.price[index];
+    document.getElementById(avail).innerText = 'Available: ' + this.available[index];
+    document.getElementById(quan).innerText = 'Quantity: ' + this.quantity[index];
+    document.getElementById('total_1').innerText = 'Total: $' + this.total;
+    document.getElementById('total_2').innerText = 'Total: $' + this.total;
+    document.getElementById('total_3').innerText = 'Total: $' + this.total;
   }
 }
