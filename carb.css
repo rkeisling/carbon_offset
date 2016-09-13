@@ -1,10 +1,10 @@
 * {
-  /*margin: 1%;
+  /*margin: 1%;*/
   border-width: thin;
   border-color: rgb(0, 0, 0);
-  border-style: dashed;*/
+  border-style: dashed;
 }
 
-#rightarea {
+.rightarea {
   float: left;
 }
