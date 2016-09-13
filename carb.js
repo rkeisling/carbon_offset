@@ -5,9 +5,11 @@ var cart = {
   quantity: [0, 0, 0],
   total: 0,
   addToCart: function(index, avail, quan, total_price) {
-    this.available[index]--;
-    this.quantity[index]++;
-    this.total = this.total + this.price[index];
+    if (this.available[index] > 0) {
+      this.available[index]--;
+      this.quantity[index]++;
+      this.total = this.total + this.price[index];
+    };
     document.getElementById(avail).innerText = 'Available: ' + this.available[index];
     document.getElementById(quan).innerText = 'Quantity: ' + this.quantity[index];
     document.getElementById('total_1').innerText = 'Total: $' + this.total;
